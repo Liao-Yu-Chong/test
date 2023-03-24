@@ -44,10 +44,16 @@
       width: 280px;
       height: 100px;
 
-      @include media-breakpoint-down(xs){
+      @include media-breakpoint-down(xs) {
         width: 200px;
         height: 80px;
       }
+    }
+  }
+
+  .content-text {
+    img {
+      height: 280px;
     }
   }
 
