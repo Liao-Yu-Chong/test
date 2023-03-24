@@ -1,9 +1,7 @@
 .container {
   margin: 0 auto;
-  // padding: 0 15px;
-  // width: 1500px;
   max-width: 100%;
-  min-height: calc(100vh - $footer-Height);
+  min-height: calc(100vh);
 
   .content-block {
     max-width: 160px;
