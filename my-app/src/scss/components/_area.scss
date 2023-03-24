@@ -1,0 +1,46 @@
+.detail-group {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+
+
+  .detail-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 10px;
+      color: $pink;
+      text-shadow: 2px 2px 0 #000;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 32px;
+
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+    }
+  }
+
+  .detail-content {}
+}

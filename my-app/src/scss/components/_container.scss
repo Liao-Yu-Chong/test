@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  // padding: 0 15px;
+  // width: 1500px;
+  max-width: 100%;
+  min-height: calc(100vh - $footer-Height);
+
+  .content-block {
+    max-width: 160px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    i {
+      margin-right: 5px;
+      font-size: 18px;
+    }
+  }
+
+  .note-box {
+    .p-fieldset {
+      margin-top: 20px;
+
+      .p-fieldset-legend-text {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.message-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
