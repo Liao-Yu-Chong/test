@@ -5,21 +5,12 @@
     padding: 20px 0;
   }
 
-  > h3,
-  h4 {
-    margin-top: 0;
-
-    span {
-      color: red;
-    }
-  }
-
   .grid {
     margin: 0;
     padding: 0 15px;
     border-bottom: 1px dashed;
 
-    &:nth-of-type(5){
+    &:nth-of-type(5) {
       border-bottom: none;
     }
 
@@ -28,7 +19,17 @@
 
       > h3 {
         margin: 0;
+
+        @include media-breakpoint-down(xs) {
+          font-size: 14px;
+        }
       }
+    }
+  }
+
+  .field-radiobutton > label {
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
     }
   }
 }
