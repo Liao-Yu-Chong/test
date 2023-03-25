@@ -31,9 +31,10 @@ export class QuestionnaireComponent implements OnInit {
     console.log(this.countB);
     console.log(this.countC);
     console.log(this.countD);
+    this.setUrl();
   }
 
-  test(num: any) {
+  plusCount(num: any) {
     switch (num) {
       case 1:
         this.countA += 1;
@@ -51,7 +52,6 @@ export class QuestionnaireComponent implements OnInit {
         break;
     }
 
-    // this.setUrl();
   }
 
   setUrl() {
@@ -133,6 +133,6 @@ export class QuestionnaireComponent implements OnInit {
     if (bool) {
       this.show = true;
     }
-    this.test(num);
+    this.plusCount(num);
   }
 }
