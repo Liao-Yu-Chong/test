@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./view/index/index.module').then((m) => m.IndexModule),
   },
+  {
+    path: 'questionnaire',
+    loadChildren: () =>
+      import('./view/questionnaire/questionnaire.module').then((m) => m.QuestionnaireModule),
+  },
 
 ];
 
