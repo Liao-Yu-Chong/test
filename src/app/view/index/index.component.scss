@@ -1,138 +1,132 @@
 @import "/src/scss/custom";
 
-.main {
-  background-image: url("../../../assets/img/bg.png");
-  background-size: 100% 100%;
-  height: 100%;
+*p {
+  font-size: 24px;
+  color: grey;
+  font-weight: 500;
+  margin: 0;
+}
 
-  *p {
-    font-size: 24px;
-    color: grey;
-    font-weight: 500;
-    margin: 0;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px;
 
-  header {
+  .main-header {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px 25px;
-
-    .main-header {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 15px;
-    }
-
-    .sub-header {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      > h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin: 0;
-      }
-    }
+    justify-content: space-between;
+    padding-bottom: 15px;
   }
 
-  .logo-img {
-    img {
-      width: 380px;
-      height: 150px;
-
-      @include media-breakpoint-down(xs) {
-        width: 200px;
-        height: 80px;
-      }
-    }
-  }
-
-  .content-text {
+  .sub-header {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+
+    > h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}
+
+.logo-img {
+  img {
+    width: 380px;
+    height: 150px;
 
     @include media-breakpoint-down(xs) {
-      flex-direction: column;
-      align-items: center;
-      padding-right: 0;
+      width: 200px;
+      height: 80px;
     }
+  }
+}
 
-    img {
-      height: 350px;
+.content-text {
+  display: flex;
+  justify-content: space-around;
 
-      &:nth-of-type(2) {
-        height: 750px;
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
 
-        @include media-breakpoint-down(xs) {
-          height: 320px;
-        }
-      }
+  img {
+    height: 350px;
+
+    &:nth-of-type(2) {
+      height: 750px;
 
       @include media-breakpoint-down(xs) {
-        height: 120px;
+        height: 320px;
       }
     }
 
-    .info {
-      margin-top: 100px;
-
-      @include media-breakpoint-down(xs) {
-        margin-top: 10px;
-      }
+    @include media-breakpoint-down(xs) {
+      height: 120px;
     }
   }
 
-  .start-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px 0;
+  .info {
+    margin-top: 100px;
 
-    a {
-      background-image: url("../../../assets/img/start.png");
-      height: 150px;
-      width: 400px;
-      transition: .5s ease;
+    @include media-breakpoint-down(xs) {
+      margin-top: 10px;
+    }
+  }
+}
 
-      &:hover {
-        background-image: url("../../../assets/img/start_hover.png");
-      }
+.start-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
 
-      @include media-breakpoint-down(xs) {
-        height: 75px;
-        width: 200px;
-        background-size: 200px 75px;
-      }
+  a {
+    background-image: url("../../../assets/img/start.png");
+    height: 150px;
+    width: 400px;
+    transition: 0.5s ease;
+
+    &:hover {
+      background-image: url("../../../assets/img/start_hover.png");
     }
 
-    #start {
-      height: 150px;
-      width: 400px;
-      background: transparent;
-      background-image: url("../../../assets/img/start.png");
-      &:hover {
-        background-image: url("../../../assets/img/start_hover.png");
-      }
+    @include media-breakpoint-down(xs) {
+      height: 75px;
+      width: 200px;
+      background-size: 200px 75px;
     }
   }
 
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  #start {
+    height: 150px;
+    width: 400px;
+    background: transparent;
+    background-image: url("../../../assets/img/start.png");
+    &:hover {
+      background-image: url("../../../assets/img/start_hover.png");
+    }
+  }
+}
 
-    p {
-      font-size: 18px;
-      font-weight: 400;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
-      @include media-breakpoint-down(xs) {
-        font-size: 12px;
-      }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
     }
   }
 }
