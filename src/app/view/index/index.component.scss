@@ -6,7 +6,7 @@
   height: 100%;
 
   *p {
-    font-size: 18px;
+    font-size: 24px;
     color: grey;
     font-weight: 500;
     margin: 0;
@@ -33,6 +33,7 @@
       justify-content: space-between;
 
       > h3 {
+        font-size: 24px;
         font-weight: bold;
         margin: 0;
       }
@@ -41,8 +42,8 @@
 
   .logo-img {
     img {
-      width: 280px;
-      height: 100px;
+      width: 380px;
+      height: 150px;
 
       @include media-breakpoint-down(xs) {
         width: 200px;
@@ -53,8 +54,7 @@
 
   .content-text {
     display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
+    justify-content: space-around;
 
     @include media-breakpoint-down(xs) {
       flex-direction: column;
@@ -63,10 +63,10 @@
     }
 
     img {
-      height: 280px;
+      height: 350px;
 
       &:nth-of-type(2) {
-        height: 550px;
+        height: 7 50px;
 
         @include media-breakpoint-down(xs) {
           height: 320px;
@@ -93,7 +93,7 @@
     justify-content: space-around;
 
     p {
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 400;
     }
   }
