@@ -7,107 +7,51 @@ import { Router } from '@angular/router';
   styleUrls: ['./questionnaire.component.scss'],
 })
 export class QuestionnaireComponent implements OnInit {
-  num: any;
+  num1: any;
   num2: any;
   num3: any;
   num4: any;
   num5: any;
+
   countA = 0;
   countB = 0;
   countC = 0;
   countD = 0;
+
+  backPage: any = 1;
+
+  show: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {}
 
   submit() {
-    this.test();
+    console.log(this.countA);
+    console.log(this.countB);
+    console.log(this.countC);
+    console.log(this.countD);
   }
 
-  test() {
-    switch (this.num) {
-      case '1':
+  test(num: any) {
+    switch (num) {
+      case 1:
         this.countA += 1;
         break;
-      case '2':
+      case 2:
         this.countB += 1;
         break;
-      case '3':
+      case 3:
         this.countC += 1;
         break;
-      case '4':
-        this.countD += 1;
-        break;
-      default:
-        break;
-    }
-    switch (this.num2) {
-      case '1':
-        this.countA += 1;
-        break;
-      case '2':
-        this.countB += 1;
-        break;
-      case '3':
-        this.countC += 1;
-        break;
-      case '4':
-        this.countD += 1;
-        break;
-      default:
-        break;
-    }
-    switch (this.num3) {
-      case '1':
-        this.countA += 1;
-        break;
-      case '2':
-        this.countB += 1;
-        break;
-      case '3':
-        this.countC += 1;
-        break;
-      case '4':
-        this.countD += 1;
-        break;
-      default:
-        break;
-    }
-    switch (this.num4) {
-      case '1':
-        this.countA += 1;
-        break;
-      case '2':
-        this.countB += 1;
-        break;
-      case '3':
-        this.countC += 1;
-        break;
-      case '4':
-        this.countD += 1;
-        break;
-      default:
-        break;
-    }
-    switch (this.num5) {
-      case '1':
-        this.countA += 1;
-        break;
-      case '2':
-        this.countB += 1;
-        break;
-      case '3':
-        this.countC += 1;
-        break;
-      case '4':
+      case 4:
         this.countD += 1;
         break;
       default:
         break;
     }
 
-    this.setUrl();
+    // this.setUrl();
   }
 
   setUrl() {
@@ -165,5 +109,30 @@ export class QuestionnaireComponent implements OnInit {
     this.countB = 0;
     this.countC = 0;
     this.countD = 0;
+  }
+
+  next(num: any, page: any, bool?: boolean) {
+    this.backPage = page;
+    switch (this.backPage) {
+      case 1:
+        this.num1 = num;
+        break;
+      case 2:
+        this.num2 = num;
+        break;
+      case 3:
+        this.num3 = num;
+        break;
+      case 4:
+        this.num4 = num;
+        break;
+      case 5:
+        this.num5 = num;
+        break;
+    }
+    if (bool) {
+      this.show = true;
+    }
+    this.test(num);
   }
 }

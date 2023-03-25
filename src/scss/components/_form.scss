@@ -8,11 +8,7 @@
   .grid {
     margin: 0;
     padding: 0 15px;
-    border-bottom: 1px dashed;
-
-    &:nth-of-type(5) {
-      border-bottom: none;
-    }
+    // border-bottom: 1px dashed;
 
     > * {
       margin-bottom: 10px;
