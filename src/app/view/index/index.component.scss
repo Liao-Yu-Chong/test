@@ -91,11 +91,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin: 100px 0;
 
-    img {
+    a {
+      background-image: url("../../../assets/img/start.png");
+      height: 150px;
+      width: 400px;
+
+      &:hover {
+        background-image: url("../../../assets/img/start_hover.png");
+      }
+
       @include media-breakpoint-down(xs) {
+        height: 75px;
         width: 200px;
+        background-size: 200px 75px;
+      }
+    }
+
+    #start {
+      height: 150px;
+      width: 400px;
+      background: transparent;
+      background-image: url("../../../assets/img/start.png");
+      &:hover {
+        background-image: url("../../../assets/img/start_hover.png");
       }
     }
   }
