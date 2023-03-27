@@ -10,7 +10,7 @@
 
 .result-page {
   background-image: url("../../../assets/img/result_page_bg.png");
-  background-size: 100% 100%;
+  background-size: 100% auto;
   height: 100%;
 
   .ntut-icon {
@@ -73,9 +73,11 @@
 
     img {
       width: 80px;
+      height: 80px;
 
       @include media-breakpoint-down(xs) {
         width: 50px;
+        height: 50px;
       }
     }
   }
