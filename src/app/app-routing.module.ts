@@ -14,7 +14,7 @@ const routes: Routes = [
       import('./view/questionnaire/questionnaire.module').then((m) => m.QuestionnaireModule),
   },
   {
-    path: 'result',
+    path: 'result/:id',
     loadChildren: () =>
       import('./view/result/result.module').then((m) => m.ResultModule),
   },

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',
-  styleUrls: ['./questionnaire.component.scss'],
+  styleUrls: [ './questionnaire.component.scss' ],
 })
 export class QuestionnaireComponent implements OnInit {
   num1: any;
@@ -22,15 +22,16 @@ export class QuestionnaireComponent implements OnInit {
 
   show: boolean = false;
 
-  constructor() {}
+  result_url: string = '/result/';
+  result_type: any;
 
-  ngOnInit(): void {}
+  constructor(
+    private _router: Router
+  ) { }
+
+  ngOnInit(): void { }
 
   submit() {
-    console.log(this.countA);
-    console.log(this.countB);
-    console.log(this.countC);
-    console.log(this.countD);
     this.setUrl();
   }
 
@@ -60,55 +61,47 @@ export class QuestionnaireComponent implements OnInit {
       this.countA > this.countC &&
       this.countA > this.countD
     ) {
-      // result_url = 'resultsA.html';
-      console.log('A');
+      this.result_type = 'A'
     } else if (
       this.countB > this.countA &&
       this.countB > this.countC &&
       this.countB > this.countD
     ) {
-      // result_url = 'results_B.html';
-      console.log('B');
+      this.result_type = 'B'
     } else if (
       this.countC > this.countA &&
       this.countC > this.countB &&
       this.countC > this.countD
     ) {
-      // result_url = 'results_C.html';
-      console.log('C');
+      this.result_type = 'C'
     } else if (
       this.countD > this.countA &&
       this.countD > this.countB &&
       this.countD > this.countC
     ) {
-      // result_url = 'results_D.html';
-      console.log('D');
+      this.result_type = 'D'
     } else if (this.countA === this.countB) {
-      // result_url = 'results_E.html';
-      console.log('E');
+      this.result_type = 'E'
     } else if (this.countA === this.countC) {
-      // result_url = 'results_F.html';
-      console.log('F');
+      this.result_type = 'D'
     } else if (this.countA === this.countD) {
-      // result_url = 'results_G.html';
-      console.log('G');
+      this.result_type = 'G'
     } else if (this.countB === this.countC) {
-      // result_url = 'results_H.html';
-      console.log('H');
+      this.result_type = 'H'
     } else if (this.countB === this.countD) {
-      // result_url = 'results_I.html';
-      console.log('I');
+      this.result_type = 'I'
     } else if (this.countC === this.countD) {
-      // result_url = 'results_J.html';
-      console.log('J');
+      this.result_type = 'J'
     } else {
-      // result_url = 'error.html';
       console.log('ERROR');
     }
     this.countA = 0;
     this.countB = 0;
     this.countC = 0;
     this.countD = 0;
+
+    console.log(this.result_url, this.result_type)
+    this._router.navigate([ this.result_url, this.result_type ])
   }
 
   next(num: any, page: any, bool?: boolean) {
