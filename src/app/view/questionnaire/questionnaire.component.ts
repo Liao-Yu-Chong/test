@@ -22,6 +22,8 @@ export class QuestionnaireComponent implements OnInit {
 
   show: boolean = false;
 
+  showSubmit: boolean = false;
+
   result_url: string = '/result/';
   result_type: any;
 
@@ -55,7 +57,7 @@ export class QuestionnaireComponent implements OnInit {
 
 
     if (this.countA + this.countB + this.countC + this.countD == 5) {
-      this.show = true;
+      this.showSubmit = true;
     }
 
   }
@@ -128,6 +130,21 @@ export class QuestionnaireComponent implements OnInit {
         this.num5 = num;
         break;
     }
+
+    if (bool) {
+      this.show = true;
+    }
     this.plusCount(num);
+  }
+
+  clear() {
+    this.backPage = 1;
+    this.countA = 0;
+    this.countB = 0;
+    this.countC = 0;
+    this.countD = 0;
+    this.show = false;
+    this.showSubmit = false;
+
   }
 }
