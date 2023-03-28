@@ -53,6 +53,11 @@ export class QuestionnaireComponent implements OnInit {
         break;
     }
 
+
+    if (this.countA + this.countB + this.countC + this.countD == 5) {
+      this.show = true;
+    }
+
   }
 
   setUrl() {
@@ -122,9 +127,6 @@ export class QuestionnaireComponent implements OnInit {
       case 5:
         this.num5 = num;
         break;
-    }
-    if (bool) {
-      this.show = true;
     }
     this.plusCount(num);
   }
