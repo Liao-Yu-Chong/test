@@ -38,7 +38,12 @@ header {
     width: 380px;
     height: 150px;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(x) {
+      width: 300px;
+      height: 120px;
+    }
+
+    @include media-breakpoint-down(sm) {
       width: 200px;
       height: 80px;
     }
@@ -49,7 +54,11 @@ header {
   display: flex;
   justify-content: space-around;
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(lg){
+    justify-content: center;
+  }
+
+  @include media-breakpoint-down(sm) {
     flex-direction: column;
     align-items: center;
     padding-right: 0;
@@ -61,9 +70,25 @@ header {
     &:nth-of-type(2) {
       height: 750px;
 
+      @include media-breakpoint-down(x) {
+        height: 580px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        height: 450px;
+      }
+
       @include media-breakpoint-down(xs) {
         height: 320px;
       }
+    }
+
+    @include media-breakpoint-down(x) {
+      height: 280px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      height: 200px;
     }
 
     @include media-breakpoint-down(xs) {
@@ -74,7 +99,16 @@ header {
   .info {
     margin-top: 100px;
 
-    @include media-breakpoint-down(xs) {
+
+    @include media-breakpoint-down(x) {
+      margin-top: 80px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
       margin-top: 10px;
     }
   }
@@ -96,7 +130,7 @@ header {
       background-image: url("../../../assets/img/start_hover.png");
     }
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       height: 75px;
       width: 200px;
       background-size: 200px 75px;
@@ -123,7 +157,7 @@ footer {
     font-size: 18px;
     font-weight: 400;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       font-size: 12px;
     }
   }

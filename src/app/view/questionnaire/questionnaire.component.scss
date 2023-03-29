@@ -1,6 +1,6 @@
 @import "/src/scss/custom";
 
-.all-center-flex{
+.all-center-flex {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
     padding: 50px;
     margin: 0;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       padding: 10px;
     }
   }
@@ -29,8 +29,16 @@
   border-radius: 8px;
   background-color: #fff;
 
+  @include media-breakpoint-down(x) {
+    margin: 0 25%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 20%;
+  }
+
   @include media-breakpoint-down(xs) {
-    margin: 0 10px;
+    margin: 0 20px;
   }
 
   .select-btn {
@@ -39,8 +47,12 @@
     align-items: center;
     padding: 0 80px;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       padding: 0 40px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding: 0 20px;
     }
   }
 }
