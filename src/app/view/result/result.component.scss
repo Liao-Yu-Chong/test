@@ -14,7 +14,43 @@
 }
 
 .result-page-A {
-  background-image: url("../../../assets/img/result_page_bg.png");
+  background-image: url("../../../assets/img/result/A/a_background.png");
+}
+
+.result-page-B {
+  // background-image: url("../../../assets/img/result/B/b_background.png");
+}
+
+.result-page-C {
+  background-image: url("../../../assets/img/result/C/c_background.png");
+}
+
+.result-page-D {
+  background-image: url("../../../assets/img/result/D/d_background.png");
+}
+
+.result-page-E {
+  background-image: url("../../../assets/img/result/E/a_b_background.png");
+}
+
+.result-page-F {
+  background-image: url("../../../assets/img/result/F/a_c_background.png");
+}
+
+.result-page-G {
+  background-image: url("../../../assets/img/result/G/a_d_background.png");
+}
+
+.result-page-H {
+  background-image: url("../../../assets/img/result/H/b_c_background.png");
+}
+
+.result-page-I {
+  background-image: url("../../../assets/img/result/I/b_d_background.png");
+}
+
+.result-page-J {
+  background-image: url("../../../assets/img/result/J/c_d_background.png");
 }
 
 .ntut-icon {
@@ -47,7 +83,7 @@
     display: flex;
     flex-direction: column;
     padding: 180px 110px 90px 110px;
-    background-image: url("../../../assets/img/result_content.png");
+    background-image: url("../../../assets/img/result/A/result_content.png");
     background-size: 100% 100%;
     width: 750px;
     height: 950px;
