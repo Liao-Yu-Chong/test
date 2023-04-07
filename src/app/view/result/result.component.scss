@@ -9,151 +9,154 @@
 }
 
 .result-page {
-  background-image: url("../../../assets/img/result_page_bg.png");
   background-size: 100% auto;
   height: 100%;
+}
 
-  .ntut-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.result-page-A {
+  background-image: url("../../../assets/img/result_page_bg.png");
+}
 
-    img {
-      width: 380px;
-      height: 150px;
+.ntut-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      @include media-breakpoint-down(sm) {
-        width: 200px;
-        height: 80px;
-      }
-    }
-  }
-
-  .result-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+  img {
+    width: 380px;
+    height: 150px;
 
     @include media-breakpoint-down(sm) {
-      padding-top: 30px;
-    }
-
-    .content-box {
-      display: flex;
-      flex-direction: column;
-      padding: 180px 110px 90px 110px;
-      background-image: url("../../../assets/img/result_content.png");
-      background-size: 100% 100%;
-      width: 750px;
-      height: 950px;
-
-      @include media-breakpoint-down(sm) {
-        width: 350px;
-        height: 500px;
-        padding: 100px 65px 40px 65px;
-      }
-
-      span {
-        color: #754c24;
-        display: flex;
-      }
-
-      .content-title {
-        justify-content: center;
-        font-size: 24px;
-        font-weight: bold;
-
-        @include media-breakpoint-down(sm) {
-          font-size: 16px;
-        }
-      }
-
-      .content-start {
-        font-size: 20px;
-        margin-top: 25px;
-        line-height: 2;
-
-        @include media-breakpoint-down(sm) {
-          font-size: 13px;
-          line-height: 1.8;
-        }
-      }
-
-      .content {
-        font-size: 20px;
-        margin-bottom: 50px;
-        line-height: 2;
-
-        @include media-breakpoint-down(sm) {
-          font-size: 13px;
-          line-height: 1.8;
-          margin-bottom: 30px;
-        }
-      }
-
-      .result-text {
-        font-size: 24px;
-        font-weight: bold;
-
-        @include media-breakpoint-down(sm) {
-          font-size: 16px;
-        }
-      }
-
-      .bottom-text {
-        justify-content: center;
-        color: grey;
-        font-size: 18px;
-
-        @include media-breakpoint-down(sm) {
-          font-size: 12px;
-        }
-      }
-    }
-
-    img {
-      width: 250px;
-      margin-left: -250px;
-      margin-bottom: -965px;
-
-      @include media-breakpoint-down(sm) {
-        width: 120px;
-        margin-left: -120px;
-        margin-bottom: -500px;
-      }
-    }
-  }
-
-  .social-icons {
-    display: flex;
-    align-items: center;
-    margin: 0 35%;
-
-    @include media-breakpoint-down(x) {
-      margin: 0 30%;
-    }
-
-    @include media-breakpoint-down(lg) {
-      margin: 0 22%;
-    }
-
-    @include media-breakpoint-down(sm) {
-      margin: 0 32%;
-    }
-
-    @include media-breakpoint-down(xs) {
-      margin: 0 40px;
-    }
-
-    img {
-      width: 80px;
+      width: 200px;
       height: 80px;
+    }
+  }
+}
+
+.result-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 110px 90px 110px;
+    background-image: url("../../../assets/img/result_content.png");
+    background-size: 100% 100%;
+    width: 750px;
+    height: 950px;
+
+    @include media-breakpoint-down(sm) {
+      width: 350px;
+      height: 500px;
+      padding: 100px 65px 40px 65px;
+    }
+
+    span {
+      color: #754c24;
+      display: flex;
+    }
+
+    .content-title {
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
 
       @include media-breakpoint-down(sm) {
-        width: 40px;
-        height: 40px;
+        font-size: 16px;
       }
+    }
+
+    .content-start {
+      font-size: 20px;
+      margin-top: 25px;
+      line-height: 2;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 13px;
+        line-height: 1.8;
+      }
+    }
+
+    .content {
+      font-size: 20px;
+      margin-bottom: 50px;
+      line-height: 2;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 13px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+      }
+    }
+
+    .result-text {
+      font-size: 24px;
+      font-weight: bold;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
+    }
+
+    .bottom-text {
+      justify-content: center;
+      color: grey;
+      font-size: 18px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  img {
+    width: 250px;
+    margin-left: -250px;
+    margin-bottom: -965px;
+
+    @include media-breakpoint-down(sm) {
+      width: 120px;
+      margin-left: -120px;
+      margin-bottom: -500px;
+    }
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin: 0 35%;
+
+  @include media-breakpoint-down(x) {
+    margin: 0 30%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin: 0 22%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 32%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin: 0 40px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+
+    @include media-breakpoint-down(sm) {
+      width: 40px;
+      height: 40px;
     }
   }
 }
