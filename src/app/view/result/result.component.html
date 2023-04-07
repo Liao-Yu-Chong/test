@@ -1,43 +1,174 @@
-<div class="result-page" [ngClass]="{'result-page-A': result_type == 'A',
-    'result-page-B':result_type == 'B',
-    'result-page-C':result_type == 'C',
-    'result-page-D':result_type == 'D',
-    'result-page-E':result_type == 'E',
-    'result-page-F':result_type == 'F',
-    'result-page-G':result_type == 'G',
-    'result-page-H':result_type == 'H',
-    'result-page-I':result_type == 'I',
-    'result-page-J':result_type == 'J'}">
+<div
+  class="result-page"
+  [ngClass]="{
+    'result-page-A': result_type == 'A',
+    'result-page-B': result_type == 'B',
+    'result-page-C': result_type == 'C',
+    'result-page-D': result_type == 'D',
+    'result-page-E': result_type == 'E',
+    'result-page-F': result_type == 'F',
+    'result-page-G': result_type == 'G',
+    'result-page-H': result_type == 'H',
+    'result-page-I': result_type == 'I',
+    'result-page-J': result_type == 'J'
+  }"
+>
   <div class="wrapper">
     <div class="container">
       <div class="ntut-icon">
-        <img src="../../../assets/img/result/A/ntut_icon.png" />
+        <ng-container [ngSwitch]="result_type">
+          <ng-container *ngSwitchCase="'A'">
+            <img src="../../../assets/img/result/A/a_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'B'">
+            <img src="../../../assets/img/result/B/b_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'C'">
+            <img src="../../../assets/img/result/C/c_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'D'">
+            <img src="../../../assets/img/result/D/d_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'E'">
+            <img src="../../../assets/img/result/E/ntut_icon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'F'">
+            <img src="../../../assets/img/result/F/a_c_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'G'">
+            <img src="../../../assets/img/result/G/a_d_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'H'">
+            <img src="../../../assets/img/result/H/b_c_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'I'">
+            <img src="../../../assets/img/result/I/b_d_ntut.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'J'">
+            <img src="../../../assets/img/result/J/c_d_ntut.png" />
+          </ng-container>
+        </ng-container>
       </div>
 
       <div class="result-content">
-        <div class="content-box">
-          <span class="content-title">{{content_title}}</span>
+        <div
+          class="content-box"
+          [ngClass]="{
+            'content-box-A': result_type == 'A',
+            'content-box-B': result_type == 'B',
+            'content-box-C': result_type == 'C',
+            'content-box-D': result_type == 'D',
+            'content-box-E': result_type == 'E',
+            'content-box-F': result_type == 'F',
+            'content-box-G': result_type == 'G',
+            'content-box-H': result_type == 'H',
+            'content-box-I': result_type == 'I',
+            'content-box-J': result_type == 'J'
+          }"
+        >
+          <span class="content-title">{{ content_title }}</span>
 
-          <span class="content-start">{{content_start}}</span>
+          <span class="content-start">{{ content_start }}</span>
 
           <span class="content">
-            {{content}}
+            {{ content }}
           </span>
 
           <span class="result-text">與你特別合得來的是...</span>
 
           <span class="bottom-text">快截圖分享到社群吧</span>
         </div>
-        <img src="../../../assets/img/result/A/mountain_icon.png">
+        <ng-container [ngSwitch]="result_type">
+          <ng-container *ngSwitchCase="'A'">
+            <img src="../../../assets/img/result/A/a_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'B'">
+            <img src="../../../assets/img/result/B/b_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'C'">
+            <img src="../../../assets/img/result/C/c_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'D'">
+            <img src="../../../assets/img/result/D/d_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'E'">
+            <img src="../../../assets/img/result/E/mountain_icon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'F'">
+            <img src="../../../assets/img/result/F/a_c_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'G'">
+            <img src="../../../assets/img/result/G/a_d_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'H'">
+            <img src="../../../assets/img/result/H/b_c_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'I'">
+            <img src="../../../assets/img/result/I/b_d_righticon.png" />
+          </ng-container>
+          <ng-container *ngSwitchCase="'J'">
+            <img src="../../../assets/img/result/J/c_d_righticon.png" />
+          </ng-container>
+        </ng-container>
       </div>
 
       <div class="social-icons">
         <a href=""><img src="../../../assets/img/result/fb_icon.png" /></a>
         <a href=""><img src="../../../assets/img/result/ig_icon.png" /></a>
         <a href=""><img src="../../../assets/img/result/behance_icon.png" /></a>
-        <a href=""><img src="../../../assets/img/result/web_icon.png" /></a>
+        <ng-container [ngSwitch]="result_type">
+          <ng-container *ngSwitchCase="'A'">
+            <a href=""
+              ><img src="../../../assets/img/result/A/a_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'B'">
+            <a href=""
+              ><img src="../../../assets/img/result/B/b_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'C'">
+            <a href=""
+              ><img src="../../../assets/img/result/C/c_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'D'">
+            <a href=""
+              ><img src="../../../assets/img/result/D/d_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'E'">
+            <a href=""
+              ><img src="../../../assets/img/result/E/web_icon.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'F'">
+            <a href=""
+              ><img src="../../../assets/img/result/F/a_c_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'G'">
+            <a href=""
+              ><img src="../../../assets/img/result/G/a_d_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'H'">
+            <a href=""
+              ><img src="../../../assets/img/result/H/b_c_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'I'">
+            <a href=""
+              ><img src="../../../assets/img/result/I/b_d_offical.png"
+            /></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'J'">
+            <a href=""
+              ><img src="../../../assets/img/result/J/c_d_offical.png"
+            /></a>
+          </ng-container>
+        </ng-container>
       </div>
-
     </div>
   </div>
 </div>
