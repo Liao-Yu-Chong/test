@@ -76,7 +76,52 @@
 
           <span class="result-text">與你特別合得來的是...</span>
 
-          <span class="bottom-text">快截圖分享到社群吧</span>
+          <div class="wind-type">
+            <ng-container [ngSwitch]="result_type">
+              <ng-container *ngSwitchCase="'A'">
+                <img src="../../../assets/img/result/A/wind.png" />
+                <img src="../../../assets/img/result/A/tornado_2.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'B'">
+                <img src="../../../assets/img/result/B/cool breeze.png" />
+                <img src="../../../assets/img/result/B/monsoon_2.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'C'">
+                <img src="../../../assets/img/result/C/warm.png" />
+                <img src="../../../assets/img/result/C/tornado_3.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'D'">
+                <img src="../../../assets/img/result/D/monsoon_3.png" />
+                <img src="../../../assets/img/result/D/soft.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'E'">
+                <img src="../../../assets/img/result/E/breeze.png" />
+                <img src="../../../assets/img/result/E/tornado.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'F'">
+                <img src="../../../assets/img/result/F/zephyr.png" />
+                <img src="../../../assets/img/result/F/breeze_1.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'G'">
+                <img src="../../../assets/img/result/G/tornado_1.png" />
+                <img src="../../../assets/img/result/G/zephyr_1.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'H'">
+                <img src="../../../assets/img/result/H/spring_breeze.png" />
+                <img src="../../../assets/img/result/H/monsoon.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'I'">
+                <img src="../../../assets/img/result/I/spring_breeze_1.png" />
+                <img src="../../../assets/img/result/I/autumn_wind.png" />
+              </ng-container>
+              <ng-container *ngSwitchCase="'J'">
+                <img src="../../../assets/img/result/J/monsoon_1.png" />
+                <img src="../../../assets/img/result/J/autumn_wind_1.png" />
+              </ng-container>
+            </ng-container>
+          </div>
+
+          <span class="bottom-text">快截圖分享到社群吧~</span>
         </div>
         <ng-container [ngSwitch]="result_type">
           <ng-container *ngSwitchCase="'A'">
