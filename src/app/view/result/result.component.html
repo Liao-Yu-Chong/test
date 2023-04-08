@@ -66,15 +66,19 @@
             'content-box-J': result_type == 'J'
           }"
         >
-          <span class="content-title">{{ content_title }}</span>
+          <span class="content-title" [style]="{ color: font_color }">{{
+            content_title
+          }}</span>
 
-          <span class="content-start">{{ content_start }}</span>
+          <span class="content-start" [style]="{ color: content_font_color }">{{
+            content_start
+          }}</span>
 
-          <span class="content">
+          <span class="content" [style]="{ color: content_font_color }">
             {{ content }}
           </span>
 
-          <span class="result-text">與你特別合得來的是...</span>
+          <span class="result-text" [style]="{ color: font_color }">與你特別合得來的是...</span>
 
           <div class="wind-type">
             <ng-container [ngSwitch]="result_type">
@@ -121,7 +125,7 @@
             </ng-container>
           </div>
 
-          <span class="bottom-text">快截圖分享到社群吧~</span>
+          <span class="bottom-text" [style]="{ color: content_font_color }">快截圖分享到社群吧~</span>
         </div>
         <ng-container [ngSwitch]="result_type">
           <ng-container *ngSwitchCase="'A'">

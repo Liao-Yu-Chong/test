@@ -110,8 +110,8 @@
     }
 
     .content-start {
-      font-size: 20px;
-      margin-top: 25px;
+      font-size: 22px;
+      margin: 25px 20px 0 20px;
       line-height: 2;
 
       @include media-breakpoint-down(sm) {
@@ -155,7 +155,6 @@
 
     .bottom-text {
       justify-content: center;
-      color: grey;
       font-size: 20px;
 
       @include media-breakpoint-down(sm) {
