@@ -115,8 +115,9 @@
       line-height: 2;
 
       @include media-breakpoint-down(sm) {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.8;
+        margin: 0 10px;
       }
     }
 
@@ -126,9 +127,9 @@
       line-height: 2;
 
       @include media-breakpoint-down(sm) {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.8;
-        margin-bottom: 30px;
+        margin: 0 10px 10px 10px;
       }
     }
 
@@ -150,6 +151,10 @@
       img{
         width: 240px;
         margin: 0;
+
+        @include media-breakpoint-down(sm) {
+          width: 120px;
+        }
       }
     }
 
