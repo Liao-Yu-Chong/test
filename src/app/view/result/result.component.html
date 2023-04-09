@@ -78,7 +78,9 @@
             {{ content }}
           </span>
 
-          <span class="result-text" [style]="{ color: font_color }">與你特別合得來的是...</span>
+          <span class="result-text" [style]="{ color: font_color }"
+            >與你特別合得來的是...</span
+          >
 
           <div class="wind-type">
             <ng-container [ngSwitch]="result_type">
@@ -125,38 +127,55 @@
             </ng-container>
           </div>
 
-          <span class="bottom-text" [style]="{ color: content_font_color }">快截圖分享到社群吧~</span>
+          <span class="bottom-text" [style]="{ color: content_font_color }"
+            >快截圖分享到社群吧~</span
+          >
         </div>
+
+        <ng-container *ngIf="result_type == 'A'">
+          <img
+            class="left-element"
+            src="../../../assets/img/result/A/a_left_element.png"
+          />
+        </ng-container>
+
+        <ng-container *ngIf="result_type == 'F'">
+          <img
+            class="right-top-element"
+            src="../../../assets/img/result/F/a_c_right_top_element.png"
+          />
+        </ng-container>
+
         <ng-container [ngSwitch]="result_type">
           <ng-container *ngSwitchCase="'A'">
-            <img src="../../../assets/img/result/A/a_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/A/a_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'B'">
-            <img src="../../../assets/img/result/B/b_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/B/b_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'C'">
-            <img src="../../../assets/img/result/C/c_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/C/c_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'D'">
-            <img src="../../../assets/img/result/D/d_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/D/d_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'E'">
-            <img src="../../../assets/img/result/E/mountain_icon.png" />
+            <img class="right-element" src="../../../assets/img/result/E/mountain_icon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'F'">
-            <img src="../../../assets/img/result/F/a_c_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/F/a_c_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'G'">
-            <img src="../../../assets/img/result/G/a_d_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/G/a_d_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'H'">
-            <img src="../../../assets/img/result/H/b_c_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/H/b_c_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'I'">
-            <img src="../../../assets/img/result/I/b_d_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/I/b_d_righticon.png" />
           </ng-container>
           <ng-container *ngSwitchCase="'J'">
-            <img src="../../../assets/img/result/J/c_d_righticon.png" />
+            <img class="right-element" src="../../../assets/img/result/J/c_d_righticon.png" />
           </ng-container>
         </ng-container>
       </div>
