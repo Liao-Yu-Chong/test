@@ -223,6 +223,31 @@
     }
   }
 
+  .a-element {
+    width: 300px;
+    margin-left: -350px;
+    margin-bottom: -950px;
+
+    @include media-breakpoint-down(sm) {
+      width: 150px;
+      margin-left: -150px;
+      margin-bottom: -490px;
+    }
+  }
+
+  .c-element {
+    width: 300px;
+    margin-left: -350px;
+    margin-bottom: -950px;
+
+    @include media-breakpoint-down(sm) {
+      width: 150px;
+      right: 35px;
+      margin-bottom: -500px;
+      position: absolute;
+    }
+  }
+
   .left-element {
     position: absolute;
     width: 350px;
