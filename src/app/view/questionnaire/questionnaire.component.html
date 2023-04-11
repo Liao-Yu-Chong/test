@@ -1,21 +1,14 @@
 <div class="main">
   <div class="wrapper">
-    <div class="container">
-      <div class="all-center-flex title-group">
-        <h1>問</h1>
-        <h1>卷</h1>
-        <h1>調</h1>
-        <h1>查</h1>
-      </div>
-
+    <div class="container flex all-center-flex flex-column">
       <div class="flex form-group">
         <div class="grid" *ngIf="backPage == 1">
           <div class="col-12">
-            <h3>故事1:</h3>
+            <h3>故事:</h3>
             <h3>感受到微風撫過臉龐，你睜開了眼。啊，不小心睡著了。</h3>
             <h3>眼前一片雪白讓你嚇了一跳，這是哪裡？</h3>
             <br />
-            <h3>問題1:</h3>
+            <h3>問題:</h3>
             <h3>
               往前走了幾步，你發現那片純淨的白色原來是稀薄的雲霧，你正在一座不知名的山頂上。
             </h3>
@@ -35,7 +28,7 @@
         </div>
         <div class="grid" *ngIf="backPage == 2">
           <div class="col-12">
-            <h3>故事2:</h3>
+            <h3>故事:</h3>
             <h3>
               走到半山腰，你看見一個湖泊。湖面映照著天光月色，美妙的景色讓你情不自禁的走向前。
             </h3>
@@ -43,7 +36,7 @@
               接著你看到湖邊坐著一個老翁，他拿著一隻奇怪的釣竿，旁邊放著一桶水，卻什麼也沒釣到的樣子。
             </h3>
             <br />
-            <h3>問題2:</h3>
+            <h3>問題:</h3>
             <h3>
               你克制不住心中的好奇，上前一探究竟，卻發現原來他不是在釣魚，而是...
             </h3>
@@ -60,12 +53,12 @@
         </div>
         <div class="grid" *ngIf="backPage == 3">
           <div class="col-12">
-            <h3>故事3:</h3>
+            <h3>故事:</h3>
             <h3>
               你們暢聊許久，要離開湖邊時，他想送你一個特殊的禮物，你低頭一看，居然是各式各樣的華麗琉璃珠！
             </h3>
             <br />
-            <h3>問題3:</h3>
+            <h3>問題:</h3>
             <h3>深思熟慮後，你決定選擇...</h3>
 
             <div class="select-btn">
@@ -81,7 +74,7 @@
         </div>
         <div class="grid" *ngIf="backPage == 4">
           <div class="col-12">
-            <h3>問題4:</h3>
+            <h3>問題:</h3>
             <h3>
               終於快要走到山腳下，你看到了一棟佇立於瀑布之下的房屋，依直覺，你覺得它長得…
             </h3>
@@ -98,14 +91,14 @@
         </div>
         <div class="grid" *ngIf="backPage == 5">
           <div class="col-12">
-            <h3>故事5:</h3>
+            <h3>故事:</h3>
             <h3>把房子逛了一圈後，你走到了頂樓的平台。</h3>
             <h3>徐徐的晚風吹亂了你的頭髮，正當想離開頂樓時，</h3>
             <h3>
               卻發現通往樓梯的門變成一個隧道，隧道的門口寫著：「風把你領來，也將把你帶走...」
             </h3>
             <br />
-            <h3>問題5:</h3>
+            <h3>問題:</h3>
             <h3>依照你的想像，這個隧道的外貌像是...</h3>
             <div class="select-btn">
               <p-button [disabled]="show" label="A. 黑得不見五指的黑洞，偶爾傳來一些嘶嘶聲" styleClass="p-button-help"
