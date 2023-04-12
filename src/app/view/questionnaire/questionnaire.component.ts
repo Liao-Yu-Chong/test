@@ -24,7 +24,7 @@ export class QuestionnaireComponent implements OnInit {
 
   showSubmit: boolean = false;
 
-  result_url: string = '/result/';
+  result_url: string = 'my-app/result/';
   result_type: any;
 
   constructor(
