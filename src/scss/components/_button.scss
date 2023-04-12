@@ -3,8 +3,14 @@
     width: 100%;
     margin-top: 15px;
 
-    > .p-button-help {
+    > * {
       width: 100% !important;
+      background-color: #0152e7;
+
+      &:hover {
+        background: darken(#0152e7, 15%) !important;
+        border-color: darken(#0152e7, 15%) !important;
+      }
 
       span {
         text-align: left;

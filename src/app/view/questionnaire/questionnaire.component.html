@@ -4,11 +4,9 @@
       <div class="flex form-group">
         <div class="grid" *ngIf="backPage == 1">
           <div class="col-12">
-            <h3>故事:</h3>
             <h3>感受到微風撫過臉龐，你睜開了眼。啊，不小心睡著了。</h3>
             <h3>眼前一片雪白讓你嚇了一跳，這是哪裡？</h3>
             <br />
-            <h3>問題:</h3>
             <h3>
               往前走了幾步，你發現那片純淨的白色原來是稀薄的雲霧，你正在一座不知名的山頂上。
             </h3>
@@ -16,19 +14,18 @@
               一陣強風來襲，本來籠罩著你的雲霧被吹散，這時你突然發現幾尺外的樹後，有一隻雪白的狐狸，這時你選擇...
             </h3>
             <div class="select-btn">
-              <p-button label="A. 追過去看看" styleClass="p-button-help" (click)="next(1, 2)"></p-button>
+              <p-button label="A. 追過去看看" (click)="next(1, 2)"></p-button>
 
-              <p-button label="B. 怕有危險，不要隨意靠近" styleClass="p-button-help" (click)="next(2, 2)"></p-button>
+              <p-button label="B. 怕有危險，不要隨意靠近" (click)="next(2, 2)"></p-button>
 
-              <p-button label="C. 呼喚牠看看" styleClass="p-button-help" (click)="next(3, 2)"></p-button>
+              <p-button label="C. 呼喚牠看看" (click)="next(3, 2)"></p-button>
 
-              <p-button label="D. 不在乎，繞開走就好" styleClass="p-button-help" (click)="next(4, 2)"></p-button>
+              <p-button label="D. 不在乎，繞開走就好" (click)="next(4, 2)"></p-button>
             </div>
           </div>
         </div>
         <div class="grid" *ngIf="backPage == 2">
           <div class="col-12">
-            <h3>故事:</h3>
             <h3>
               走到半山腰，你看見一個湖泊。湖面映照著天光月色，美妙的景色讓你情不自禁的走向前。
             </h3>
@@ -36,82 +33,72 @@
               接著你看到湖邊坐著一個老翁，他拿著一隻奇怪的釣竿，旁邊放著一桶水，卻什麼也沒釣到的樣子。
             </h3>
             <br />
-            <h3>問題:</h3>
             <h3>
               你克制不住心中的好奇，上前一探究竟，卻發現原來他不是在釣魚，而是...
             </h3>
             <div class="select-btn">
-              <p-button label="A. 在釣一堆發光的白色毛球" styleClass="p-button-help" (click)="next(1, 3)"></p-button>
+              <p-button label="A. 在釣一堆發光的白色毛球" (click)="next(1, 3)"></p-button>
 
-              <p-button label="B. 在和一條人魚玩釣魚線" styleClass="p-button-help" (click)="next(2, 3)"></p-button>
+              <p-button label="B. 在和一條人魚玩釣魚線" (click)="next(2, 3)"></p-button>
 
-              <p-button label="C. 在釣湖底的花" styleClass="p-button-help" (click)="next(3, 3)"></p-button>
+              <p-button label="C. 在釣湖底的花" (click)="next(3, 3)"></p-button>
 
-              <p-button label="D. 只是在看水" styleClass="p-button-help" (click)="next(4, 3)"></p-button>
+              <p-button label="D. 只是在看水" (click)="next(4, 3)"></p-button>
             </div>
           </div>
         </div>
         <div class="grid" *ngIf="backPage == 3">
           <div class="col-12">
-            <h3>故事:</h3>
             <h3>
               你們暢聊許久，要離開湖邊時，他想送你一個特殊的禮物，你低頭一看，居然是各式各樣的華麗琉璃珠！
             </h3>
             <br />
-            <h3>問題:</h3>
             <h3>深思熟慮後，你決定選擇...</h3>
 
             <div class="select-btn">
-              <p-button label="A. 流轉著流光的琉璃扇" styleClass="p-button-help" (click)="next(1, 4)"></p-button>
+              <p-button label="A. 流轉著流光的琉璃扇" (click)="next(1, 4)"></p-button>
 
-              <p-button label="B. 動物造型的琉璃珠" styleClass="p-button-help" (click)="next(2, 4)"></p-button>
+              <p-button label="B. 動物造型的琉璃珠" (click)="next(2, 4)"></p-button>
 
-              <p-button label="C. 可以戴在手指上的琉璃戒指" styleClass="p-button-help" (click)="next(3, 4)"></p-button>
+              <p-button label="C. 可以戴在手指上的琉璃戒指" (click)="next(3, 4)"></p-button>
 
-              <p-button label="D. 琉璃打造的寶劍" styleClass="p-button-help" (click)="next(4, 4)"></p-button>
+              <p-button label="D. 琉璃打造的寶劍" (click)="next(4, 4)"></p-button>
             </div>
           </div>
         </div>
         <div class="grid" *ngIf="backPage == 4">
           <div class="col-12">
-            <h3>問題:</h3>
             <h3>
               終於快要走到山腳下，你看到了一棟佇立於瀑布之下的房屋，依直覺，你覺得它長得…
             </h3>
             <div class="select-btn">
-              <p-button label="A. 只是一間普通的小木屋" styleClass="p-button-help" (click)="next(1, 5)"></p-button>
+              <p-button label="A. 只是一間普通的小木屋" (click)="next(1, 5)"></p-button>
 
-              <p-button label="B. 用玻璃打造的全玻璃房屋" styleClass="p-button-help" (click)="next(2, 5)"></p-button>
+              <p-button label="B. 用玻璃打造的全玻璃房屋" (click)="next(2, 5)"></p-button>
 
-              <p-button label="C. 像是古老英格蘭莊園的城堡式建築" styleClass="p-button-help" (click)="next(3, 5)"></p-button>
+              <p-button label="C. 像是古老英格蘭莊園的城堡式建築" (click)="next(3, 5)"></p-button>
 
-              <p-button label="D. 金屬製造的堅硬堡壘" styleClass="p-button-help" (click)="next(4, 5)"></p-button>
+              <p-button label="D. 金屬製造的堅硬堡壘" (click)="next(4, 5)"></p-button>
             </div>
           </div>
         </div>
         <div class="grid" *ngIf="backPage == 5">
           <div class="col-12">
-            <h3>故事:</h3>
             <h3>把房子逛了一圈後，你走到了頂樓的平台。</h3>
             <h3>徐徐的晚風吹亂了你的頭髮，正當想離開頂樓時，</h3>
             <h3>
               卻發現通往樓梯的門變成一個隧道，隧道的門口寫著：「風把你領來，也將把你帶走...」
             </h3>
             <br />
-            <h3>問題:</h3>
             <h3>依照你的想像，這個隧道的外貌像是...</h3>
             <div class="select-btn">
-              <p-button [disabled]="show" label="A. 黑得不見五指的黑洞，偶爾傳來一些嘶嘶聲" styleClass="p-button-help"
-                (click)="next(1, 5, true)"></p-button>
+              <p-button [disabled]="show" label="A. 黑得不見五指的黑洞，偶爾傳來一些嘶嘶聲" (click)="next(1, 5, true)"></p-button>
 
-              <p-button [disabled]="show" label="B. 有七彩光芒從隧道裡照射出來" styleClass="p-button-help"
-                (click)="next(2, 5, true)"></p-button>
+              <p-button [disabled]="show" label="B. 有七彩光芒從隧道裡照射出來" (click)="next(2, 5, true)"></p-button>
 
-              <p-button [disabled]="show" label="C. 有陣陣強風從隧道裡吹來" styleClass="p-button-help"
-                (click)="next(3, 5, true)"></p-button>
+              <p-button [disabled]="show" label="C. 有陣陣強風從隧道裡吹來" (click)="next(3, 5, true)"></p-button>
 
-              <p-button [disabled]="show" label="D. 看進去白茫茫一片，安靜的一個洞" styleClass="p-button-help"
-                (click)="next(4, 5, true)"></p-button>
+              <p-button [disabled]="show" label="D. 看進去白茫茫一片，安靜的一個洞" (click)="next(4, 5, true)"></p-button>
             </div>
           </div>
         </div>
@@ -119,7 +106,8 @@
 
       <div class="all-center-flex btn-group">
         <p-button *ngIf="backPage == 5" [disabled]="!showSubmit" class="btn" label="送出" (click)="submit()"></p-button>
-        <p-button *ngIf="backPage == 5" class="btn" styleClass="p-button-warning" label="重新填寫" (click)="clear()"></p-button>
+        <p-button *ngIf="backPage == 5" class="btn" styleClass="p-button-warning" label="重新填寫"
+          (click)="clear()"></p-button>
       </div>
     </div>
   </div>
