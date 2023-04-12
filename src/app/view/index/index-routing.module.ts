@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'my-app/index', pathMatch: 'full' },
+  { path: '', redirectTo: 'index', pathMatch: 'full' },
   {
-    path: 'my-app/index',
+    path: 'index',
     component: IndexComponent
   }
 ];
