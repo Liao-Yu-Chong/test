@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { QuestionnaireComponent } from './questionnaire.component';
 
 const routes: Routes = [
-  { path: 'my-app/questionnaire', redirectTo: '', pathMatch: 'full' },
+  { path: 'questionnaire', redirectTo: '', pathMatch: 'full' },
   {
     path: '',
     component: QuestionnaireComponent,
