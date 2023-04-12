@@ -9,12 +9,12 @@ const routes: Routes = [
       import('./view/index/index.module').then((m) => m.IndexModule),
   },
   {
-    path: 'questionnaire',
+    path: 'my-app/questionnaire',
     loadChildren: () =>
       import('./view/questionnaire/questionnaire.module').then((m) => m.QuestionnaireModule),
   },
   {
-    path: 'result/:id',
+    path: 'my-app/result/:id',
     loadChildren: () =>
       import('./view/result/result.module').then((m) => m.ResultModule),
   },
