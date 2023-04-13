@@ -106,7 +106,8 @@ export class QuestionnaireComponent implements OnInit {
     this.countC = 0;
     this.countD = 0;
 
-    this._router.navigate([ 'test/result', this.result_type ])
+    this._router.navigate([ 'result', this.result_type ])
+    // let url = 'result/' + this.result_type
   }
 
   next(num: any, page: any, bool?: boolean) {
